@@ -3,7 +3,11 @@
 
 
 class Life:
-    matters = True
+    __matters = True
+
+    @property
+    def matters(self):
+        return self.__matters
 
 
 class Person:
